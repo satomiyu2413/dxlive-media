@@ -48,10 +48,10 @@ export default function HomePage() {
             </div>
             <Link
               href={`/articles/${featured.slug}`}
-              className="flex gap-4 bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
+              className="flex flex-col sm:flex-row bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-md transition-shadow"
             >
               <div
-                className="w-44 shrink-0 flex items-center justify-center overflow-hidden"
+                className="h-44 sm:h-auto sm:w-44 sm:shrink-0"
                 style={{
                   background: "linear-gradient(135deg, #1a1828 0%, #2a1020 100%)",
                   minHeight: "130px",
@@ -103,6 +103,21 @@ export default function HomePage() {
         <div className="hidden lg:block w-72 shrink-0">
           <Sidebar relatedArticles={rest.slice(0, 5)} />
         </div>
+      </div>
+
+      {/* Mobile CTA (hidden on desktop) */}
+      <div className="lg:hidden mt-6 rounded-lg p-5 text-center" style={{ background: "#e8003d" }}>
+        <p className="text-white font-bold text-sm mb-1">登録無料で5ptプレゼント中</p>
+        <p className="text-white text-xs opacity-80 mb-4">18歳以上・今すぐ体験できます</p>
+        <a
+          href="https://www.dxlive.com/member"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-white font-black text-sm py-2.5 px-4 rounded transition-opacity hover:opacity-90"
+          style={{ color: "#e8003d" }}
+        >
+          DXLIVEを無料で試す →
+        </a>
       </div>
     </div>
   );

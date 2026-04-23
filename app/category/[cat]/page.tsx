@@ -82,6 +82,21 @@ export default async function CategoryPage(props: PageProps<"/category/[cat]">) 
           <Sidebar relatedArticles={others} />
         </div>
       </div>
+
+      {/* Mobile CTA */}
+      <div className="lg:hidden mt-6 rounded-lg p-5 text-center" style={{ background: "#e8003d" }}>
+        <p className="text-white font-bold text-sm mb-1">登録無料で5ptプレゼント中</p>
+        <p className="text-white text-xs opacity-80 mb-4">18歳以上・今すぐ体験できます</p>
+        <a
+          href="https://www.dxlive.com/member"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block bg-white font-black text-sm py-2.5 px-4 rounded transition-opacity hover:opacity-90"
+          style={{ color: "#e8003d" }}
+        >
+          DXLIVEを無料で試す →
+        </a>
+      </div>
     </div>
   );
 }
