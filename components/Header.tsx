@@ -1,6 +1,12 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import { CATEGORY_LABELS } from "@/lib/constants";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       {/* Top bar */}
@@ -21,17 +27,45 @@ export default function Header() {
             </span>
           </Link>
 
-          <a
-            href="https://www.dxlive.com/member"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white text-xs font-bold px-4 py-2 rounded transition-opacity hover:opacity-80"
-            style={{ background: "#e8003d" }}
-          >
-            無料で試す
-          </a>
+          <div className="flex items-center gap-3">
+            <a
+              href="https://www.dxlive.com/member"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-xs font-bold px-4 py-2 rounded transition-opacity hover:opacity-80"
+              style={{ background: "#e8003d" }}
+            >
+              無料で試す
+            </a>
+            <button
+              className="md:hidden p-1 text-gray-600"
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="メニュー"
+            >
+              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile drawer */}
+      {menuOpen && (
+        <div className="md:hidden bg-white border-b border-gray-200 px-4 py-3">
+          <Link href="/" className="block py-2.5 text-sm font-bold border-b border-gray-100 text-gray-700" onClick={() => setMenuOpen(false)}>
+            すべての記事
+          </Link>
+          {Object.entries(CATEGORY_LABELS).map(([key, label]) => (
+            <Link
+              key={key}
+              href={`/category/${key}`}
+              className="block py-2.5 text-sm font-bold border-b border-gray-100 last:border-0 text-gray-600"
+              onClick={() => setMenuOpen(false)}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+      )}
     </header>
   );
 }

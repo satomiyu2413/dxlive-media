@@ -33,8 +33,8 @@ export default async function CategoryPage(props: PageProps<"/category/[cat]">) 
   return (
     <div className="max-w-5xl mx-auto px-4 py-6">
       {/* Category tabs */}
-      <div className="bg-white border border-gray-200 rounded-lg mb-6">
-        <div className="flex flex-wrap">
+      <div className="hidden md:block bg-white border border-gray-200 rounded-lg mb-6">
+        <div className="flex min-w-max overflow-x-auto">
           <Link
             href="/"
             className="px-5 py-3 text-sm font-bold border-b-2 border-transparent text-gray-500 whitespace-nowrap hover:text-gray-800 transition-colors"
