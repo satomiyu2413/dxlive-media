@@ -1,3 +1,5 @@
+import React from "react";
+
 type Props = {
   slug?: string;
   category?: string;
@@ -7,7 +9,7 @@ type Props = {
 /* ── individual SVG illustrations ── */
 
 const IllustReview = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* monitor */}
     <rect x="40" y="18" width="120" height="72" rx="6" stroke="white" strokeOpacity=".9" strokeWidth="2.5" fill="none"/>
     <rect x="40" y="18" width="120" height="50" rx="6" fill="white" fillOpacity=".07"/>
@@ -27,7 +29,7 @@ const IllustReview = () => (
 );
 
 const IllustRegistration = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* clipboard */}
     <rect x="55" y="15" width="90" height="95" rx="5" stroke="white" strokeOpacity=".8" strokeWidth="2.2" fill="white" fillOpacity=".05"/>
     <rect x="75" y="8" width="50" height="16" rx="8" stroke="white" strokeOpacity=".6" strokeWidth="2" fill="#1a1828"/>
@@ -50,7 +52,7 @@ const IllustRegistration = () => (
 );
 
 const IllustSafety = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* shield */}
     <path d="M100 14 L148 30 L148 66 Q148 96 100 110 Q52 96 52 66 L52 30 Z"
       stroke="white" strokeOpacity=".85" strokeWidth="2.5" fill="white" fillOpacity=".06"/>
@@ -76,7 +78,7 @@ const IllustSafety = () => (
 );
 
 const IllustCancellation = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* door frame */}
     <rect x="55" y="18" width="70" height="90" rx="4" stroke="white" strokeOpacity=".7" strokeWidth="2.2" fill="white" fillOpacity=".05"/>
     {/* door panel */}
@@ -96,7 +98,7 @@ const IllustCancellation = () => (
 );
 
 const IllustRanks = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* podium */}
     <rect x="78" y="60" width="44" height="48" rx="3" fill="white" fillOpacity=".12" stroke="white" strokeOpacity=".5" strokeWidth="2"/>
     <rect x="44" y="76" width="36" height="32" rx="3" fill="white" fillOpacity=".07" stroke="white" strokeOpacity=".35" strokeWidth="2"/>
@@ -118,7 +120,7 @@ const IllustRanks = () => (
 );
 
 const IllustTips = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* lightbulb */}
     <path d="M100 20 Q120 20 120 42 Q120 56 108 62 L108 72 L92 72 L92 62 Q80 56 80 42 Q80 20 100 20 Z"
       stroke="white" strokeOpacity=".85" strokeWidth="2.2" fill="white" fillOpacity=".08"/>
@@ -144,7 +146,7 @@ const IllustTips = () => (
 );
 
 const IllustHowToLike = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* chat bubble left */}
     <rect x="20" y="28" width="90" height="54" rx="14" stroke="white" strokeOpacity=".7" strokeWidth="2.2" fill="white" fillOpacity=".07"/>
     <path d="M30 82 L22 96 L46 82" stroke="white" strokeOpacity=".7" strokeWidth="2" fill="white" fillOpacity=".07" strokeLinejoin="round"/>
@@ -167,7 +169,7 @@ const IllustHowToLike = () => (
 );
 
 const IllustEvents = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* calendar */}
     <rect x="38" y="24" width="100" height="86" rx="6" stroke="white" strokeOpacity=".8" strokeWidth="2.2" fill="white" fillOpacity=".05"/>
     <rect x="38" y="24" width="100" height="26" rx="6" fill="#e8003d" fillOpacity=".35"/>
@@ -191,7 +193,7 @@ const IllustEvents = () => (
 );
 
 const IllustCompare = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* left bar chart */}
     <rect x="28" y="72" width="18" height="38" rx="3" fill="#e8003d" fillOpacity=".7"/>
     <rect x="50" y="52" width="18" height="58" rx="3" fill="#e8003d" fillOpacity=".9"/>
@@ -214,7 +216,7 @@ const IllustCompare = () => (
 );
 
 const IllustPricing = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     {/* card */}
     <rect x="30" y="30" width="110" height="68" rx="8" stroke="white" strokeOpacity=".7" strokeWidth="2.2" fill="white" fillOpacity=".06"/>
     <rect x="30" y="30" width="110" height="22" rx="8" fill="white" fillOpacity=".1"/>
@@ -244,7 +246,7 @@ const IllustPricing = () => (
 );
 
 const IllustDefault = () => (
-  <svg viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg viewBox="0 0 200 120" fill="none" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
     <rect x="44" y="24" width="112" height="80" rx="6" stroke="white" strokeOpacity=".5" strokeWidth="2" fill="white" fillOpacity=".05"/>
     <line x1="60" y1="48" x2="140" y2="48" stroke="white" strokeOpacity=".3" strokeWidth="2" strokeLinecap="round"/>
     <line x1="60" y1="60" x2="120" y2="60" stroke="white" strokeOpacity=".2" strokeWidth="2" strokeLinecap="round"/>
@@ -252,7 +254,7 @@ const IllustDefault = () => (
   </svg>
 );
 
-const SLUG_MAP: Record<string, () => JSX.Element> = {
+const SLUG_MAP: Record<string, () => React.ReactElement> = {
   "dxlive-review": IllustReview,
   "registration-guide": IllustRegistration,
   "safety": IllustSafety,
@@ -265,7 +267,7 @@ const SLUG_MAP: Record<string, () => JSX.Element> = {
   "pricing": IllustPricing,
 };
 
-const CATEGORY_MAP: Record<string, () => JSX.Element> = {
+const CATEGORY_MAP: Record<string, () => React.ReactElement> = {
   review: IllustReview,
   guide: IllustRegistration,
   safety: IllustSafety,
@@ -283,7 +285,16 @@ export default function ThumbnailIllustration({ slug, category, className }: Pro
     IllustDefault;
 
   return (
-    <div className={className} style={{ width: "100%", height: "100%" }}>
+    <div
+      className={className}
+      style={{
+        width: "100%",
+        height: "100%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Component />
     </div>
   );
